@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----- CSS ------ -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ---- Theme Switcher -->
+    <link rel="stylesheet" id="switcher-id" href="">
+
+    <!-- ------ ICONS ------ -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>Analog Clock</title>
+</head>
+
+<body>
+    <section class="clock container">
+        <div class="clock_container grid">
+            <div class="clock_content grid">
+                <div class="clock_circle">
+                    <span class="clock_twelve"></span>
+                    <span class="clock_three"></span>
+                    <span class="clock_six"></span>
+                    <span class="clock_nine"></span>
+
+                    <div class="clock_rounder"></div>
+                    <div class="clock_hour" id="clock-hour"></div>
+                    <div class="clock_minutes" id="clock-minutes"></div>
+                    <div class="clock_seconds" id="clock-seconds"></div>
+
+                    <!-- ---- Dark/Light button ---- -->
+                    <div class="clock_theme">
+                        <i class='bx bxs-moon' id="theme-button"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="clock_text">
+                        <div class="clock_text-hour" id="text-hour"></div>
+                        <div class="clock_text-minutes" id="text-minutes"></div>
+                        <div class="clock_text-ampm" id="text-ampm"></div>
+                    </div>
+
+                    <div class="clock_date">
+                        <span id="date-day"></span>
+                        <span id="date-month"></span>
+                        <span id="date-year"></span>
+                    </div>
+
+                    <!-- <div class="date_week" id="date-week">
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="theme-switches">
+                <div data-theme="green" class="switch switch-1"></div>
+                <div data-theme="blue" class="switch switch-2"></div>
+                <div data-theme="orange" class="switch switch-3"></div>
+                <div data-theme="pink" class="switch switch-4"></div>
+            </div>
+            <a href="#" class="clock_logo">Analo</a>
+        </div>
+    </section>
+
+    <!-- ------ Main JS ------ -->
+    <script src="script.js"></script>
+</body>
+
+</html>
